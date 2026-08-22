@@ -75,8 +75,10 @@ We're being upfront about these rather than hiding them:
 
 ## Team
 
-*(add your names + roles here)*
+*Drishya Adhikari,
+Aayush Bhatta,
+Prasanna Bayal*
 
 ## Setup / Run
 
-*(add setup instructions once the backend/dashboard structure is in place)*
+*setup instructions once the backend/dashboard structure is in place*
