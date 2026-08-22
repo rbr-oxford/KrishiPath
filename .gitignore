@@ -67,3 +67,24 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Arduino/PlatformIO
+.pio/
+.vscode/
+*.hex
+*.elf
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Node (if you have a web dashboard)
+node_modules/
+dist/
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
