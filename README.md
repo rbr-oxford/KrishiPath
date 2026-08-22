@@ -1,5 +1,7 @@
 Visit the website:
-https://aayushifty-1.vercel.app/ KrishiTrust 🌱
+https://aayushifty-1.vercel.app/
+
+#KrishiTrust 🌱
 
 **Turning gentle transport into financial trust — for Nepal's farmers.**
 
