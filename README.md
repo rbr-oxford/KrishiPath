@@ -147,13 +147,13 @@ KrishiTrust uses a low-cost IoT approach built on our previous KrishiPath AI / R
 | 📦 Ultrasonic Sensor | Detects overloaded crate conditions |
 
 <div align="center">
-<img src="docs/images/hardware-labeled.jpg" alt="KrishiTrust sensor car with labeled components" width="700">
+<img src="hardware-labeled.jpg" alt="KrishiTrust sensor car with labeled components" width="700">
 
 *Full component layout of the sensor unit*
 
 <br/><br/>
 
-<img src="docs/images/prototype-live.jpg" alt="KrishiTrust prototype running with live status display" width="700">
+<img src="prototype-live.jpg" alt="KrishiTrust prototype running with live status display" width="700">
 
 *Prototype mid-build — on-device display showing live GPS/system status*
 </div>
