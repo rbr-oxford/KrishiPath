@@ -34,7 +34,7 @@ flowchart TD
 
     subgraph live["Current live demo — Vercel"]
         direction LR
-        D["Dummy data generator<br/>simulated sensor values"] --> W2["Website dashboard<br/>React frontend"]
+        D["Data<br/>simulated sensor values"] --> W2["Website dashboard<br/>React frontend"]
         W2 --> V["Vercel deployment<br/>live, public URL"]
     end
 ```
