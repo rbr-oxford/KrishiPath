@@ -22,6 +22,25 @@ Visit the platform:
 
 ---
 
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+    subgraph intended["Intended architecture"]
+        direction LR
+        S["Car sensors<br/>MPU6050, GPS, ultrasonic"] --> E["ESP32 module<br/>Wi-Fi bridge"]
+        E -.->|"not integrated<br/>in time"| W1["Website dashboard<br/>React frontend"]
+    end
+
+    subgraph live["Current live demo — Vercel"]
+        direction LR
+        D["Dummy data generator<br/>simulated sensor values"] --> W2["Website dashboard<br/>React frontend"]
+        W2 --> V["Vercel deployment<br/>live, public URL"]
+    end
+```
+
+The hardware pipeline (sensors → ESP32) is fully built and tested on the physical prototype. The remaining piece — streaming that live sensor data into the deployed website — wasn't finished within the hackathon's time limit, so the public demo currently runs on simulated data with the same shape and structure the real sensors produce. The scoring and dashboard logic itself is real; only the input source is simulated for now.
+
 # 🚨 The Problem
 
 Agricultural products often lose value before reaching the market.
@@ -126,6 +145,18 @@ KrishiTrust uses a low-cost IoT approach built on our previous KrishiPath AI / R
 | 📡 MPU6050 Accelerometer | Detects harsh braking, vibration, and sudden impacts |
 | 📍 GPS Module | Tracks routes and delivery consistency |
 | 📦 Ultrasonic Sensor | Detects overloaded crate conditions |
+
+<div align="center">
+<img src="docs/images/hardware-labeled.jpg" alt="KrishiTrust sensor car with labeled components" width="700">
+
+*Full component layout of the sensor unit*
+
+<br/><br/>
+
+<img src="docs/images/prototype-live.jpg" alt="KrishiTrust prototype running with live status display" width="700">
+
+*Prototype mid-build — on-device display showing live GPS/system status*
+</div>
 
 ---
 
@@ -252,7 +283,7 @@ We believe in transparent innovation.
 
 Current prototype limitations:
 
-- Demonstration data is used to show score evolution
+- - The hardware sensor pipeline (MPU6050, GPS, ultrasonic → ESP32) is built and functions on the physical prototype, but streaming that data live into the deployed website wasn't completed in time. The public demo currently runs on simulated data shaped like real sensor output, so score evolution can still be demonstrated end-to-end.
 - The system focuses on transportation handling, not complete cold-chain monitoring
 - Real-world deployment requires larger datasets and field testing
 
